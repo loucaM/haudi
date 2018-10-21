@@ -1,0 +1,34 @@
+
+h1 {
+    font-size: 200px;
+}
+
+.h1bg {
+    color: black;
+}
+
+.h2bg {
+    color: white(240, 12, 12);
+}
+
+.overlayHome {
+    height: 25%;
+    width: 100%;
+    font-size: 2EM ;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.658);
+    bottom: 0; 
+    transition: .5s ease;
+    position: absolute;
+}
+
+
+.imgContainer {
+    width: auto;
+    height: 100%;
+}
+
+.imgContainer:hover .overlayHome {
+    opacity: 0.5;
+  }

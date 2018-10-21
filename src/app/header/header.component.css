@@ -1,0 +1,42 @@
+.lien-nav {
+    font-family: 'Poiret One', cursive;
+    font-size: 1.5em;
+    color: white;
+}
+
+.navigation {
+    background-color: black;
+    color: white;
+}
+
+.canvas-style {
+    background-color: black;
+    color: white;
+    font-family: 'Poiret One', Tahoma;
+}
+
+.cat-menu-mobile {
+    color: white;
+    font-family: 'Noto Sans', Tahoma;
+    font-size: 1.5em;
+}
+
+.liste-collections-menu-mobile {
+    color: lightgray;
+    font-family: 'Noto Sans', Tahoma;
+    font-size: 1em;
+}
+
+.text-apropos {
+    font-family: 'Noto Sans', Tahoma;
+    color: grey;
+    font-size: 1em;
+}
+
+.titre-apropos {
+    font-family: 'Open sans', Tahoma;
+    color: black;
+    font-size: 1.5em;
+    padding-top: 30px;
+    text-align: center;
+}

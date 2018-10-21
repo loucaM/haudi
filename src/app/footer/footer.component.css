@@ -1,0 +1,73 @@
+.icon-socials {
+    color: white;
+    padding-top: 10px; 
+}
+
+.icon-socials:hover {
+    color: #2243B6;
+}
+
+.copyrigh {
+    font-size: 1.3em;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center; 
+    padding-top: 22px;
+}
+
+.footer-section {
+    padding-top: 22px;
+    background-color: black;
+    color: lightgray;
+    bottom: 0px;
+}
+
+.footer-section-mobile {
+    padding: 10px;
+    background-color: black;
+    color: lightgray;
+    bottom: 0px;
+}
+
+.logo-footer:hover {
+    color: aqua;
+}
+
+.logo-footer {
+    color: white;
+    font-family: 'Poiret One', sans-serif;
+    text-align: center;
+    font-size: 2.3em;
+    text-decoration: none;
+}
+
+.logo-footer-mobile:hover {
+    color: aqua;
+}
+
+.logo-footer-mobile {
+    color: white;
+    font-family: 'Poiret One', sans-serif;
+    text-align: center;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.icon-socials {
+    color: white;
+    padding-top: 15px; 
+}
+
+.icon-socials:hover {
+    color: #2243B6;
+}
+
+.copyrigh-mobile {
+    font-size: 0.8em;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center; 
+    padding-top: 6px;
+    margin-bottom: 0px;
+    
+}

@@ -1,0 +1,88 @@
+<!-- diapo tablette + -->
+<div class="uk-grid uk-visible@m">
+    <div class="uk-width-1-1 ">
+        <div  class="uk-position-relative uk-visible-toggle uk-light " uk-slideshow="velocity: 0.2; animation: fade; autoplay: true; autoplay-interval: 3000">
+        <ul class="uk-slideshow-items">
+            <li> 
+                <div  class="uk-height-large uk-background-cover uk-light uk-flex " uk-parallax="bgy: -200" >
+                    <div>
+                        <img src="./assets/images/triangle.jpg">
+                        <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                            <h3 class="uk-margin-remove">Bottom</h3>
+                            <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="uk-height-large uk-background-cover uk-light uk-flex" uk-parallax="bgy: -200">
+                    <div>
+                        <img src="./assets/images/ny.jpg">
+                            <div class="uk-overlay uk-overlay-primary uk-position-right uk-text-center uk-transition-slide-right uk-width-medium">
+                                <h3 class="uk-margin-remove">Left</h3>
+                                <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="uk-height-large uk-background-cover uk-light uk-flex " uk-parallax="bgy: -200">
+                    <div>
+                        <img src="./assets/images/back.jpg">
+                    </div>
+                </div>
+            </li>
+        </ul>
+        </div>      
+    </div>
+</div>
+
+
+    <!-- diapo mobile -->
+<div class="uk-position-relative uk-visible-toggle uk-light uk-hidden@m uk-padding-small" uk-slider="autoplay: true; center: true; autoplay-interval: 4000; pause-on-hover: true; velocity: 0.1">
+    <ul class="uk-slider-items uk-grid uk-grid-match" uk-height-viewport="offset-bottom: 30">
+        <li class="uk-width-1-1">       
+            <div class="uk-cover-container">
+                <img src="../assets/images/ny.jpg" alt="" uk-cover>
+                <div class="uk-position-center uk-text-center">
+                    <a routerLink="/collections">
+                        <h2 uk-slider-parallax="x: 100,-100">Heading</h2>
+                        <p uk-slider-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p>
+                    </a>
+                </div>   
+            </div>
+        </li>
+        <li class="uk-width-1-1">
+            <div class="uk-cover-container">
+                <img src="../assets/images/back.jpg" alt="" uk-cover>
+                <div class="uk-position-center uk-text-center">
+                    <a routerLink="/collections">
+                        <h2 uk-slider-parallax="x: 100,-100">Heading</h2>
+                        <p uk-slider-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p>
+                    </a>
+                </div>
+            </div>
+        </li>
+        <li class="uk-width-1-1">
+            <div class="uk-cover-container">
+                <img src="../assets/images/triangle.jpg" alt="" uk-cover>
+                <div class="uk-position-center uk-text-center">
+                    <a routerLink="/collections">
+                        <h2 uk-slider-parallax="x: 100,-100">Heading</h2>
+                        <p uk-slider-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p>
+                    </a>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+</div>
+
+
+
+
+
+
+
+

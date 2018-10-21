@@ -1,0 +1,50 @@
+<div class="uk-grid uk-padding-large">       
+    <div class="uk-width-1-5 uk-text-center"></div>
+    <div class="uk-width-3-5 uk-text-center">
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">            
+            <fieldset class="uk-fieldset">
+            
+            <legend class="uk-legend">Legend</legend>
+    
+            <div class="uk-margin">
+                <input required class="uk-input" type="text" placeholder="nom" formControlName="nom" required>
+                <div *ngIf="!isNomValid()  && contactForm.get('nom').touched" class ="uk-alert uk-alert-warning" >Entrez un nom valide</div>
+                
+            </div>
+
+            <div class="uk-margin">
+            
+                <input class="uk-input" type="text" placeholder="prénom" formControlName="prenom" required>
+                <div *ngIf="!isNomValid() && contactForm.get('prenom').touched" class ="uk-alert uk-alert-warning" >Entrez un prénom</div>
+                
+            </div>
+
+            <div class="uk-margin">
+                
+                <input class="uk-input" type="email" placeholder="email" formControlName="mail" required>
+                <div *ngIf="!isMailValid() && contactForm.get('mail').touched" class ="uk-alert uk-alert-warning" >Entrez un mail valide</div>
+            </div>
+    
+            <div class="uk-margin">
+                    
+                <textarea class="uk-textarea " rows="5" placeholder="Textarea" formControlName="message" required></textarea>
+                <div *ngIf="!isMessageValid() && contactForm.get('message').touched" class ="uk-alert uk-alert-warning" >Entrez un message valide</div>
+                
+            </div>
+            <div *ngIf="envoiMail  " class ="uk-alert uk-alert-success uk-animation-scale-up" >Votre message a bien été envoyé</div>
+            <div class="uk-padding">
+                <button type="submit" [disabled]="!contactForm.valid"  class="uk-button uk-button-secondary uk-button-large uk-width-1-1 uk-padding-small">envoyer</button>     
+            </div>
+                
+            </fieldset>
+        </form>
+    </div>
+    <div class="uk-width-1-5 uk-text-center"></div>
+</div>
+
+<p>Name value: {{ contactForm.get('nom').value }}</p>
+<p>Name value: {{ contactForm.get('message').value }}</p>
+<p>Form value : {{contactForm.value | json}}</p>
+<p>Form status: {{ contactForm.status | json }}</p>
+
+    
